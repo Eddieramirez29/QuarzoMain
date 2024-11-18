@@ -1,0 +1,18 @@
+$backgroundColorWhiteElements: white;
+$bodyColorWhite:rgb(240, 234, 234);
+
+body
+{
+    background-color: $bodyColorWhite;
+    border: 0;
+    margin: 0;
+}
+
+#headerContainer
+{
+    position: sticky;
+    height:50px;
+    width:100vw;
+    background-color: $backgroundColorWhiteElements;
+    box-shadow: 5px 5px 25px black;
+}
