@@ -15,4 +15,109 @@ body
     width:100vw;
     background-color: $backgroundColorWhiteElements;
     box-shadow: 5px 5px 25px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.headerContainerOfElements >*
+{
+    border: none;
+    height: 40px;
+    margin-right: 5px;
+    background-color: $backgroundColorWhiteElements;
+}
+
+.containerQuestionPost >*
+{
+    border: none;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.headerContainerOfElements
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:46px;
+    width:80vw;
+    padding: 2px;
+}
+
+.containerQuestionPost
+{
+    border: none;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#QuarzoButton
+{
+    width: 150px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #B92B27;
+    border-radius: 3px;
+}
+
+#HomeButton, #ListButton, #AnswerButton, #SpacesButton, #NotificationsButtons,
+#ProfileButton, #LanguagesButton
+{
+    width: 50px;
+    border-radius: 3px;
+}
+
+#HomeButton:hover, #ListButton:hover, #AnswerButton:hover,
+#SpacesButton:hover, #NotificationsButtons:hover,
+#ProfileButton:hover, #LanguagesButton:hover, #QuarzoButton:hover
+{
+    background-color: #f6f4f4;
+    filter: contrast(75%);
+}
+
+#HomeButton:active, #ListButton:active, #AnswerButton:active,
+#SpacesButton:active, #NotificationsButtons:active,
+#ProfileButton:active, #LanguagesButton:active, #QuarzoButton:active
+{
+    transform: scale(0.95);
+}
+
+#searchBar
+{
+    border: 1px solid rgb(209, 203, 203);
+}
+
+#searchBar:hover
+{
+    border: 1px solid rgb(220, 38, 38);
+}
+
+#addQuestionButton
+{
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #B92B27;
+    margin: 0;
+    color: $backgroundColorWhiteElements;
+}
+
+#createQuestionButton
+{
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #B92B27;
+    border-left: 1px solid black;
+    margin: 0;
+    color: $backgroundColorWhiteElements;
+}
+
+#createQuestionButton:hover, #addQuestionButton:hover
+{
+    background-color: #850905;
+}
+
