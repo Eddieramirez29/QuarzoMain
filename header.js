@@ -4,7 +4,7 @@ const selectedButtons = [
     {button: "AnswerButton"},//index 2 child selectedAnswerButton
     {button: "SpacesButton"},//index 3 child selectedSpacesButton
     {button: "NotificationsButtons"},//index 4 child selectedNotificationsButtons
-    {button: "QuarzoButton"}//index 5 child QuarzoButton
+    {button: "QuarzoButton"}//index 5 child QuarzoButton: To reload page
 ];
 
 const selectedHomeButton = document.getElementById("selectedHomeButton");
@@ -13,7 +13,31 @@ const selectedAnswerButton = document.getElementById("selectedAnswerButton");
 const selectedSpacesButton = document.getElementById("selectedSpacesButton");
 const selectedNotificationsButtons = document.getElementById("selectedNotificationsButtons");
 
-selectedButtons.forEach(function(element, index) {
+const searchBar = document.getElementById("searchBar");
+const ProfileButton = document.getElementById("ProfileButton");
+const LanguagesButton = document.getElementById("LanguagesButton");
+const body = document.body;
+
+searchBar.addEventListener("click", function()
+{
+        ProfileButton.style.display = "none";
+        LanguagesButton.style.display = "none";
+        searchBar.style.width = "335px";
+    // console.log(searchBar.offsetWidth); 223px
+});
+//When the cursor is not into the input, then show off the buttons and decrease width of the input
+searchBar.addEventListener("blur", function()
+{
+        ProfileButton.style.display = "block";
+        LanguagesButton.style.display = "block";
+        searchBar.style.width = "223px";
+});
+
+
+
+
+selectedButtons.forEach(function(element, index)
+{
     const buttonId = element.button;
     const button = document.getElementById(buttonId);
 
