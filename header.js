@@ -3,7 +3,8 @@ const selectedButtons = [
     {button: "ListButton"},//index 1 child selectedListButton
     {button: "AnswerButton"},//index 2 child selectedAnswerButton
     {button: "SpacesButton"},//index 3 child selectedSpacesButton
-    {button: "NotificationsButtons"}//index 4 child selectedNotificationsButtons
+    {button: "NotificationsButtons"},//index 4 child selectedNotificationsButtons
+    {button: "QuarzoButton"}//index 5 child QuarzoButton
 ];
 
 const selectedHomeButton = document.getElementById("selectedHomeButton");
@@ -58,6 +59,9 @@ selectedButtons.forEach(function(element, index) {
                     selectedSpacesButton.style.display = "none";
                     selectedNotificationsButtons.style.display = "block";
                         break;
+                case 5:
+                    location.reload();//Reload page
+                    break;
             }
         });
     }
