@@ -7,9 +7,18 @@ body
     margin: 0;
 }
 
+.containerMain
+{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 #headerContainer
 {
     position: sticky;
+    top: 0;
     height:50px;
     width:100vw;
     background-color: $backgroundColorWhiteElements;
@@ -17,6 +26,9 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .headerContainerOfElements >*
