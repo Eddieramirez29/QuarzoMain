@@ -11,11 +11,19 @@
     <header id="headerContainer">
         <div class="headerContainerOfElements">
             <button id="QuarzoButton">Quarzo</button>
-            <button id="HomeButton"><i class="fas fa-home"></i></button>
-            <button id="ListButton"><i class="fas fa-list-alt"></i></button>
-            <button id="AnswerButton"><i class="fas fa-pencil-alt"></i></button>
-            <button id="SpacesButton"><i class="fas fa-users"></i></button>
-            <button id="NotificationsButtons"><i class="fas fa-bell"></i></button>
+
+            <button id="HomeButton"><i class="fas fa-home"></i>
+                                <div id="selectedHomeButton"></div>    </button>
+
+            <button id="ListButton"><i class="fas fa-list-alt"></i>
+                                <div id="selectedListButton"></div>        </button>
+            <button id="AnswerButton"><i class="fas fa-pencil-alt"></i>
+                                    <div id="selectedAnswerButton"></div>        </button>
+            <button id="SpacesButton"><i class="fas fa-users"></i>
+                        <div id="selectedSpacesButton"></div>                </button>
+            <button id="NotificationsButtons"><i class="fas fa-bell"></i>
+                        <div id="selectedNotificationsButtons"></div>
+            </button>
             <input id="searchBar" type="text" placeholder="Search Quarzo">
             <button id="ProfileButton"><i class="fas fa-globe"></i></button>
             <button id="LanguagesButton"><i class="fas fa-user-circle"></i></button>
@@ -25,5 +33,7 @@
             </div>
         </div>
     </header>
+
+    <script src="./header.js"></script>
 </body>
 </html>

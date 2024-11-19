@@ -53,6 +53,20 @@ body {
   border-radius: 3px;
 }
 
+#selectedHomeButton {
+  width: 40px;
+  height: 5px;
+  background-color: #B92B27;
+}
+
+#selectedListButton, #selectedAnswerButton, #selectedSpacesButton,
+#selectedNotificationsButtons {
+  width: 40px;
+  height: 5px;
+  background-color: #B92B27;
+  display: none;
+}
+
 #HomeButton, #ListButton, #AnswerButton, #SpacesButton, #NotificationsButtons,
 #ProfileButton, #LanguagesButton {
   width: 50px;
