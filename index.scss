@@ -161,22 +161,26 @@ body
 //Desktop 1024px
 @media (min-width: 769px) and (max-width: 1024px)
 {
-    #addQuestionButton {
+    #addQuestionButton
+    {
         font-size: 13px;
     }
 
-    #createQuestionButton {
+    #createQuestionButton
+    {
         font-size: 13px;
     }
 }
 
 @media (min-width: 1024px)
 {
-    #addQuestionButton {
+    #addQuestionButton
+    {
         font-size: 13px;
     }
 
-    #createQuestionButton {
+    #createQuestionButton
+    {
         font-size: 13px;
     }
 }
@@ -216,7 +220,7 @@ body
         border-bottom: 1px solid gray;
     }
 
-    #searchButtonMobile, #addQuestionButtonMobile
+    #searchButton, #addQuestionButtonMobile
     {
         width: 106.25px;
         height: 50px;
@@ -224,7 +228,7 @@ body
         background-color: #B92B27;
         color: white;
     }
-    #searchButtonMobile >*, #addQuestionButtonMobile >*
+    #searchButton >*, #addQuestionButtonMobile >*
     {
         margin-right: 5px;
     }
@@ -274,7 +278,7 @@ body
         border-bottom: 1px solid gray;
     }
 
-    #searchButtonMobile, #addQuestionButtonMobile
+    #searchButton, #addQuestionButtonMobile
     {
         width: 192px;
         height: 50px;
@@ -282,7 +286,7 @@ body
         background-color: #B92B27;
         color: white;
     }
-    #searchButtonMobile >*, #addQuestionButtonMobile >*
+    #searchButton >*, #addQuestionButtonMobile >*
     {
         margin-right: 5px;
     }
