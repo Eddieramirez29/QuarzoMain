@@ -6,6 +6,10 @@ body
     border: 0;
     margin: 0;
 }
+.headerContainerMobile
+{
+    display: none;
+}
 
 .containerMain
 {
@@ -194,6 +198,11 @@ body
         display: none;
     }
 
+    .searchBarContainerMobile
+    {
+        display: none;
+    }
+
     .headerContainerMobile
     {
         display: block;
@@ -203,6 +212,8 @@ body
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        height: 50px;
+        width: 100%;
     }
     .containerButtonsMobile
     {
@@ -251,6 +262,10 @@ body
     {
         display: none;
     }
+    .searchBarContainerMobile
+    {
+        display: none;
+    }
 
     .headerContainerMobile
     {
@@ -285,6 +300,7 @@ body
         border: none;
         background-color: #B92B27;
         color: white;
+        
     }
     #searchButton >*, #addQuestionButtonMobile >*
     {
