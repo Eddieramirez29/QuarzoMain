@@ -12,6 +12,6 @@ QuarzoButtonMobile.addEventListener("click", function()
 searchButton.addEventListener("click", function()
 {
     QuarzoButtonMobile.style.display = "none";
-    searchButton.style.display = "none";
+    // searchButton.style.display = "none";
     addQuestionButtonMobile.style.display = "none";
 });
