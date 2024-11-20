@@ -16,7 +16,8 @@ const selectedNotificationsButtons = document.getElementById("selectedNotificati
 const searchBar = document.getElementById("searchBar");
 const ProfileButton = document.getElementById("ProfileButton");
 const LanguagesButton = document.getElementById("LanguagesButton");
-const body = document.body;
+const containerMain = document.getElementsByClassName("containerMain");
+
 
 searchBar.addEventListener("click", function()
 {

@@ -8,6 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 #headerContainer {
@@ -124,4 +125,52 @@ body {
 
 #createQuestionButton:hover, #addQuestionButton:hover {
   background-color: #850905;
+}
+
+.headerContainerMobile {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  #headerContainer {
+    display: none;
+  }
+  .headerContainerMobile {
+    display: block;
+  }
+  .headerContainerOfElementsMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .containerButtonsMobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerButtonsMobile > * {
+    width: 70.83px;
+    height: 50px;
+    border-top: 0;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  #searchButton, #addQuestionButtonMobile {
+    width: 106.25px;
+    height: 50px;
+    border: none;
+    background-color: #B92B27;
+    color: white;
+  }
+  #searchButton > *, #addQuestionButtonMobile > * {
+    margin-right: 5px;
+  }
+  #QuarzoButtonMobile {
+    width: 212.5px;
+    border: none;
+    background-color: #B92B27;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=index.css.map */
