@@ -216,7 +216,7 @@ body
         border-bottom: 1px solid gray;
     }
 
-    #searchButton, #addQuestionButtonMobile
+    #searchButtonMobile, #addQuestionButtonMobile
     {
         width: 106.25px;
         height: 50px;
@@ -224,7 +224,7 @@ body
         background-color: #B92B27;
         color: white;
     }
-    #searchButton >*, #addQuestionButtonMobile >*
+    #searchButtonMobile >*, #addQuestionButtonMobile >*
     {
         margin-right: 5px;
     }
@@ -274,7 +274,7 @@ body
         border-bottom: 1px solid gray;
     }
 
-    #searchButton, #addQuestionButtonMobile
+    #searchButtonMobile, #addQuestionButtonMobile
     {
         width: 192px;
         height: 50px;
@@ -282,7 +282,7 @@ body
         background-color: #B92B27;
         color: white;
     }
-    #searchButton >*, #addQuestionButtonMobile >*
+    #searchButtonMobile >*, #addQuestionButtonMobile >*
     {
         margin-right: 5px;
     }
