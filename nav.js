@@ -5,8 +5,6 @@ const addQuestionButtonMobile = document.getElementById("addQuestionButtonMobile
 const buttonBack = document.getElementById("buttonBack");
 const searchBarMobile = document.getElementById("searchBarMobile");
 const searchBarContainerMobile = document.getElementsByClassName("searchBarContainerMobile");
-const headerContainerOfElementsMobile = document.getElementsByClassName("headerContainerOfElementsMobile");
-const headerContainerMobile = document.getElementsByClassName("headerContainerMobile");
 
 const arrayButtons = [
     {buttonMobile: "HomeButtonMobile"},
@@ -18,7 +16,8 @@ const arrayButtons = [
     {buttonMobile: "LanguagesButtonMobile"}
 ];
 
-
+let display1;
+let display2;
 
 //It reloads the page
 QuarzoButtonMobile.addEventListener("click", function()
@@ -30,26 +29,32 @@ QuarzoButtonMobile.addEventListener("click", function()
 //2.-Appears secondary searchBar on mobile version
 searchButton.addEventListener("click", function()
 {
+    display1 = "none";
+    display2 = "block"
     disappearButtons();
     appearSecondarySearchBarOnMobileVersion();
-    headerContainerOfElementsMobile.style.display = "none";
-    headerContainerMobile.style.display = "none";
+});
+
+buttonBack.addEventListener("click", function()
+{
+    display1 = "block";
+    display2 = "none";
+    disappearButtons();
+    appearSecondarySearchBarOnMobileVersion();
 });
 
 const appearSecondarySearchBarOnMobileVersion = () =>
 {
-    buttonBack.style.display = "block";
-    searchBarMobile.style.display = "block";
-    searchBarContainerMobile.style.display = "block";
-    searchBarContainerMobile.style.position = "fixed";
-    searchBarContainerMobile.style.top = "0px";
+    buttonBack.style.display = display2;
+    searchBarMobile.style.display = display2;
+    searchBarContainerMobile.style.display = display2;
 }
 
 const disappearButtons = () =>
 {
-    QuarzoButtonMobile.style.display = "none";
-    searchButton.style.display = "none";
-    addQuestionButtonMobile.style.display = "none";
+    QuarzoButtonMobile.style.display = display1;
+    searchButton.style.display = display1;
+    addQuestionButtonMobile.style.display = display1;
 
     arrayButtons.forEach(function(element)
     {
@@ -58,7 +63,7 @@ const disappearButtons = () =>
 
         if (button)
         {
-            button.style.display = "none";
+            button.style.display = display1;
         }
         else
         {
