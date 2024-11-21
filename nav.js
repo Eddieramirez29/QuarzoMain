@@ -16,6 +16,7 @@ const arrayButtons = [
     {buttonMobile: "LanguagesButtonMobile"}
 ];
 
+let lastIconSelected;
 let display1;
 let display2;
 
@@ -71,3 +72,29 @@ const disappearButtons = () =>
         }
     });
 }
+
+
+arrayButtons.forEach(function(element, index)
+{
+    const buttonId = element.buttonMobile;
+    const button = document.getElementById(buttonId);
+    let icon = button.querySelector('i');
+
+    button.addEventListener("click", function()
+    {
+        if (button)
+        {
+                icon.style.color = '#B92B27';
+                if(lastIconSelected)
+                {
+                    lastIconSelected.style.color = 'black';
+                }
+                lastIconSelected = icon;
+        }
+        else
+        {
+            console.warn(`ID button "${buttonId}" not found.`);
+        }
+    });
+    
+});
