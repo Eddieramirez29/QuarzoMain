@@ -2,6 +2,12 @@ const QuarzoButtonMobile = document.getElementById("QuarzoButtonMobile");
 const searchButton = document.getElementById("searchButton");
 const addQuestionButtonMobile = document.getElementById("addQuestionButtonMobile");
 
+const buttonBack = document.getElementById("buttonBack");
+const searchBarMobile = document.getElementById("searchBarMobile");
+const searchBarContainerMobile = document.getElementsByClassName("searchBarContainerMobile");
+const headerContainerOfElementsMobile = document.getElementsByClassName("headerContainerOfElementsMobile");
+const headerContainerMobile = document.getElementsByClassName("headerContainerMobile");
+
 const arrayButtons = [
     {buttonMobile: "HomeButtonMobile"},
     {buttonMobile: "ListButtonMobile"},
@@ -21,7 +27,25 @@ QuarzoButtonMobile.addEventListener("click", function()
 });
 
 //1.-It hides all mobile buttons
+//2.-Appears secondary searchBar on mobile version
 searchButton.addEventListener("click", function()
+{
+    disappearButtons();
+    appearSecondarySearchBarOnMobileVersion();
+    headerContainerOfElementsMobile.style.display = "none";
+    headerContainerMobile.style.display = "none";
+});
+
+const appearSecondarySearchBarOnMobileVersion = () =>
+{
+    buttonBack.style.display = "block";
+    searchBarMobile.style.display = "block";
+    searchBarContainerMobile.style.display = "block";
+    searchBarContainerMobile.style.position = "fixed";
+    searchBarContainerMobile.style.top = "0px";
+}
+
+const disappearButtons = () =>
 {
     QuarzoButtonMobile.style.display = "none";
     searchButton.style.display = "none";
@@ -35,10 +59,10 @@ searchButton.addEventListener("click", function()
         if (button)
         {
             button.style.display = "none";
-        } 
+        }
         else
         {
-            console.warn(`Botón con ID "${buttonId}" no encontrado.`);
+            console.warn(`ID button "${buttonId}" not found.`);
         }
     });
-});
+}
