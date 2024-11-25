@@ -9,6 +9,7 @@ body
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    background-color: $bodyColorWhite;
 }
 .headerContainerMobile
 {
@@ -18,7 +19,7 @@ body
 .containerMain
 {
     height: 100vh;
-    background-color: $backgroundColorWhiteElements;
+    background-color: $bodyColorWhite;
     display: flex;
     justify-content: center;
 }
@@ -172,7 +173,7 @@ body
 
 .editCardPost
 {
-    background-color: wheat;
+    background-color: $backgroundColorWhiteElements;
     margin-top: 25px;
     width: 480px;
     height: 100px;
@@ -222,13 +223,13 @@ body
 {
     flex-grow: 1;
     border: none;
-    background-color: wheat;
+    background-color: $backgroundColorWhiteElements;
     border-radius: 5px;
 }
 
 #askButton:hover, #postButton:hover
 {
-    background-color: rgb(244, 230, 202);
+    background-color:rgb(236, 225, 225);
 }
 
 /* Estilos generales */
