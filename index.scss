@@ -238,10 +238,12 @@ body
         display: none;
     }
 
-    .headerContainerMobile
+    .headerContainerMobile, .editCardPost
     {
         display: block;
         width: 100vw;
+        border: 0;
+    margin: 0;
     }
 
     .headerContainerOfElementsMobile
@@ -298,10 +300,6 @@ body
         display: none;
     }
 
-    .editCardPost
-    {
-        width: 100vw;
-    }
 }
 
 

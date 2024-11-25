@@ -189,9 +189,11 @@ body {
   .searchBarContainerMobile {
     display: none;
   }
-  .headerContainerMobile {
+  .headerContainerMobile, .editCardPost {
     display: block;
     width: 100vw;
+    border: 0;
+    margin: 0;
   }
   .headerContainerOfElementsMobile {
     display: flex;
@@ -232,9 +234,6 @@ body {
     width: 50px;
     background-color: #B92B27;
     display: none;
-  }
-  .editCardPost {
-    width: 100vw;
   }
 }
 .editPostInput {
