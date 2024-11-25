@@ -202,7 +202,6 @@ body
 .editCardPost
 {
     background-color: wheat;
-    margin: 5px;
     margin-top: 25px;
     width: 480px;
     height: 100px;
@@ -243,9 +242,9 @@ body
         display: block;
         width: 100vw;
         border: 0;
-        
         margin-left: 0;
         margin-right: 0;
+        border: 1px solid gray;
     }
 
     .headerContainerOfElementsMobile
