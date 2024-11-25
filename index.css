@@ -12,7 +12,7 @@ body {
 }
 
 .containerMain {
-  width: 768px;
+  width: 50vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -183,6 +183,7 @@ body {
   }
   .headerContainerMobile {
     display: block;
+    width: 100%;
   }
   .headerContainerOfElementsMobile {
     display: flex;
@@ -226,7 +227,7 @@ body {
   }
 }
 .editCardPost {
-  background-color: rgb(240, 234, 234);
+  background-color: wheat;
   margin: 5px;
   margin-top: 25px;
   width: 480px;
@@ -270,10 +271,10 @@ body {
 #askButton, #postButton {
   flex-grow: 1;
   border: none;
-  background-color: rgb(240, 234, 234);
+  background-color: wheat;
   border-radius: 5px;
 }
 
 #askButton:hover, #postButton:hover {
-  background-color: white;
+  background-color: rgb(244, 230, 202);
 }/*# sourceMappingURL=index.css.map */

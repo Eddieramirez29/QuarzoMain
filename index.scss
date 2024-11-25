@@ -17,7 +17,7 @@ body
 
 .containerMain
 {
-    width: 768px;
+    width: 50vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -232,6 +232,7 @@ body
     .headerContainerMobile
     {
         display: block;
+        width: 100%;
     }
 
     .headerContainerOfElementsMobile
@@ -291,7 +292,7 @@ body
 
 .editCardPost
 {
-    background-color: $bodyColorWhite;
+    background-color: wheat;
     margin: 5px;
     margin-top: 25px;
     width: 480px;
@@ -341,11 +342,11 @@ body
 {
     flex-grow: 1;
     border: none;
-    background-color: $bodyColorWhite;
+    background-color: wheat;
     border-radius: 5px;
 }
 
 #askButton:hover, #postButton:hover
 {
-    background-color: $backgroundColorWhiteElements;
+    background-color: rgb(244, 230, 202);
 }
