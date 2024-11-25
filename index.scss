@@ -189,7 +189,8 @@ body
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
     #headerContainer
     {
         display: none;
@@ -268,6 +269,70 @@ body
         width: 50px;
         background-color: #B92B27;
         display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .containerMain
+    {
+        display: flex;
+        justify-content:center;
+    }
+    .editCardPost
+    {
+        margin: 2.5px;
+        padding:0;
+        height: 100px;
+        border: 1px solid rgb(167, 162, 162);
+        width: 100vw;
+        position: relative;
+        border-radius: 5px;
+        top:0;
+        background-color: $bodyColorWhite;
+    }
+
+    .editPostInput
+    {
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+        padding: 5px;
+    }
+    #pictureUser
+    {
+        
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    #inputAskPost
+    {
+        height: 35px;
+        flex-grow: 1;
+    }
+    .AskPost
+    {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 40px;
+        margin: 5px;
+    }
+    #askButton, #postButton
+    {
+        width: 50%;
+        height: 30px;
+        border: none;
+        background-color: $bodyColorWhite;
+    }
+
+    #askButton:hover, #postButton:hover
+    {
+        background-color: $backgroundColorWhiteElements;
     }
 }
 
