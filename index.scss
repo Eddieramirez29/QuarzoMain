@@ -17,12 +17,11 @@ body
 
 .containerMain
 {
-    width: 50vw;
+    width: 500px;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: $backgroundColorWhiteElements;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
