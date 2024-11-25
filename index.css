@@ -13,8 +13,6 @@ body {
 
 .containerMain {
   height: 100vh;
-  margin: 0;
-  padding: 0;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -144,22 +142,6 @@ body {
   display: none;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  #addQuestionButton {
-    font-size: 13px;
-  }
-  #createQuestionButton {
-    font-size: 13px;
-  }
-}
-@media (min-width: 1024px) {
-  #addQuestionButton {
-    font-size: 13px;
-  }
-  #createQuestionButton {
-    font-size: 13px;
-  }
-}
 .editCardPost {
   background-color: wheat;
   margin-top: 25px;
@@ -169,74 +151,6 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-  #headerContainer {
-    display: none;
-  }
-  #searchBarMobile {
-    flex-grow: 1;
-    display: none;
-  }
-  .searchBarContainerMobile {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-  }
-  .searchBarContainerMobile {
-    display: none;
-  }
-  .headerContainerMobile, .editCardPost {
-    display: block;
-    width: 100vw;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    border: 1px solid gray;
-  }
-  .headerContainerOfElementsMobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50px;
-    width: 100%;
-  }
-  .containerButtonsMobile {
-    display: flex;
-    flex-direction: row;
-  }
-  .containerButtonsMobile > * {
-    width: 15%; /* Relativo al ancho total */
-    height: 50px;
-    border: 1px solid gray;
-    border-top: none;
-  }
-  #searchButton, #addQuestionButtonMobile {
-    flex: 2;
-    height: 50px;
-    border: none;
-    background-color: #B92B27;
-    color: white;
-  }
-  #searchButton > *, #addQuestionButtonMobile > * {
-    margin-right: 5px;
-  }
-  #QuarzoButtonMobile {
-    flex: 3;
-    border: none;
-    background-color: #B92B27;
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-  }
-  #buttonBack {
-    width: 50px;
-    background-color: #B92B27;
-    display: none;
-  }
-}
 .editPostInput {
   display: flex;
   flex-direction: row;
@@ -278,4 +192,104 @@ body {
 
 #askButton:hover, #postButton:hover {
   background-color: rgb(244, 230, 202);
+}
+
+/* Estilos generales */
+#addQuestionButton,
+#createQuestionButton {
+  font-size: 13px;
+}
+
+/* Estilos generales */
+#addQuestionButton,
+#createQuestionButton {
+  font-size: 13px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #addQuestionButton,
+  #createQuestionButton {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  #addQuestionButton,
+  #createQuestionButton {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  #headerContainer,
+  #searchBarMobile,
+  .searchBarContainerMobile {
+    display: none;
+  }
+  .searchBarContainerMobile {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  .headerContainerMobile {
+    display: block;
+    width: 100vw;
+    border: 1px solid gray;
+    margin: 0;
+  }
+  .editCardPost {
+    width: 480px;
+    border: 1px solid gray;
+    margin: 0;
+  }
+  .headerContainerOfElementsMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+  }
+  .containerButtonsMobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerButtonsMobile > * {
+    width: 15%;
+    height: 50px;
+    border: 1px solid gray;
+    border-top: none;
+  }
+  #searchButton,
+  #addQuestionButtonMobile {
+    flex: 2;
+    height: 50px;
+    border: none;
+    background-color: #B92B27;
+    color: white;
+  }
+  #searchButton > *,
+  #addQuestionButtonMobile > * {
+    margin-right: 5px;
+  }
+  #QuarzoButtonMobile {
+    flex: 3;
+    border: none;
+    background-color: #B92B27;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #buttonBack {
+    width: 50px;
+    background-color: #B92B27;
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .editCardPost {
+    width: 100vw;
+    border: 1px solid gray;
+    margin: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
