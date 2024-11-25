@@ -181,7 +181,7 @@ body {
   }
   .headerContainerMobile {
     display: block;
-    width: 100%;
+    width: 100vw;
   }
   .headerContainerOfElementsMobile {
     display: flex;
