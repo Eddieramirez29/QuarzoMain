@@ -1,0 +1,29 @@
+$backgroundColorWhiteElements: white;
+.containerLabelsPost
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px;
+}
+#floatingLabelAsk
+{
+    display: none;
+    position: relative;
+    left: 0;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 130px;
+    background-color: $backgroundColorWhiteElements;
+}
+
+#floatingLabelPost
+{
+    display: none;
+    position: relative;
+    left: 353px;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 130px;
+    background-color: $backgroundColorWhiteElements;
+}
