@@ -6,6 +6,7 @@ $backgroundColorWhiteElements: white;
     flex-direction: row;
     margin-top: 10px;
     width: 480px;
+    border: 1px solid rgb(0, 0, 0);
 }
 #floatingLabelAsk
 {
@@ -22,7 +23,7 @@ $backgroundColorWhiteElements: white;
 {
     display: none;
     position: relative;
-    left: 353px;
+    left: 348px;
     border: 0.5px solid gray;
     border-radius: 10px;
     width: 130px;
