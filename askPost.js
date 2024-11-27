@@ -2,7 +2,7 @@ const askButton = document.getElementById("askButton");
 const floatingLabelAsk = document.getElementById("floatingLabelAsk");
 const postButton = document.getElementById("postButton");
 const floatingLabelPost = document.getElementById("floatingLabelPost");
-const overlay = document.getElementById("overlay");
+const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
 overlay.addEventListener("click", function()
 {

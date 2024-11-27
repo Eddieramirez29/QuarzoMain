@@ -259,11 +259,17 @@ body
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px)
+{
     #headerContainer,
     #searchBarMobile,
     .searchBarContainerMobile {
         display: none;
+    }
+
+    #searchBarMobile
+    {
+        flex-grow: 1;
     }
 
     .searchBarContainerMobile {
