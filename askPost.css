@@ -36,7 +36,7 @@
     margin: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .containerLabelsPost {
     width: 100vw;
     border: 1px solid rgb(0, 0, 0);
