@@ -8,11 +8,17 @@ $backgroundColorWhiteElements: white;
     width: 480px;
     border: 1px solid rgb(0, 0, 0);
 }
+#divider1, #divider2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    border: 1px solid rgb(209, 24, 24);
+}
+
 #floatingLabelAsk
 {
-    display: none;
-    position: relative;
-    left: 0;
     border: 0.5px solid gray;
     border-radius: 10px;
     width: 130px;
@@ -21,9 +27,6 @@ $backgroundColorWhiteElements: white;
 
 #floatingLabelPost
 {
-    display: none;
-    position: relative;
-    left: 348px;
     border: 0.5px solid gray;
     border-radius: 10px;
     width: 130px;
@@ -40,7 +43,7 @@ $backgroundColorWhiteElements: white;
     }
 }
 
-@media (max-width: 480px)
+@media (max-width: 425px)
 {
     .containerLabelsPost
     {
@@ -50,6 +53,6 @@ $backgroundColorWhiteElements: white;
     }
     #floatingLabelPost
     {
-        left: 293px;
+        // left: 293px;
     }
 }
