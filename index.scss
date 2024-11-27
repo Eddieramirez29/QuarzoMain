@@ -338,8 +338,10 @@ body
     }
 }
 
-@media (max-width: 480px) {
-    .editCardPost {
+@media (max-width: 480px)
+{
+    .editCardPost
+    {
         width: 100vw;
         border: 1px solid gray;
         margin: 0;

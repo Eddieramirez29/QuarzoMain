@@ -30,6 +30,16 @@ $backgroundColorWhiteElements: white;
     background-color: $backgroundColorWhiteElements;
 }
 
+@media (max-width: 768px)
+{
+    .containerLabelsPost
+    {
+        width: 480px;
+        border: 1px solid rgb(0, 0, 0);
+        margin: 0;
+    }
+}
+
 @media (max-width: 480px)
 {
     .containerLabelsPost
