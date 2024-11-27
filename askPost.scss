@@ -60,11 +60,51 @@ $backgroundColorWhiteElements: white;
 .modal
 {
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
     z-index: 20;
-    display: none; /* Oculto por defecto */
+    display: none; /* Hidden by default */
+    width: 480px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+#closeWindowPost
+{
+    background-color: #fdfdfd; /* Color de fondo */
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+#closeWindowPost:hover
+{
+    transform: scale(0.9); /* Efecto al pasar el ratón */
+    background-color: gray;
+}
+
+
+.titlePostWindow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.containerAdviseSection
+{
+    background-color: rgb(142, 239, 223);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(2, 103, 86);
 }
