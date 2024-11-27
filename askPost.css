@@ -89,4 +89,19 @@
   padding: 10px;
   border-radius: 10px;
   color: rgb(2, 103, 86);
+}
+
+.containerSelectPublicViews {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#selectPublicButton {
+  border: none;
+  border-radius: 10px;
+}
+
+#selectPublicButton:hover {
+  background-color: gray;
 }/*# sourceMappingURL=askPost.css.map */
