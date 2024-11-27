@@ -2,6 +2,18 @@ const askButton = document.getElementById("askButton");
 const floatingLabelAsk = document.getElementById("floatingLabelAsk");
 const postButton = document.getElementById("postButton");
 const floatingLabelPost = document.getElementById("floatingLabelPost");
+const overlay = document.getElementById("overlay");
+
+overlay.addEventListener("click", function()
+{
+    hideOverlay();
+});
+
+
+askButton.addEventListener("click", function()
+{
+    showOverlay();
+});
 
 askButton.addEventListener("mouseover", function()
 {
@@ -22,7 +34,23 @@ postButton.addEventListener("mouseover", function()
     floatingLabelPost.style.alignContent = "center";
 });
 
+postButton.addEventListener("click", function()
+{
+    showOverlay();
+});
+
 postButton.addEventListener("mouseout", function()
 {
     floatingLabelPost.style.display = "none";
 });
+
+
+function showOverlay()
+{
+    document.getElementById('overlay').style.display = 'block';
+}
+
+function hideOverlay()
+{
+    document.getElementById('overlay').style.display = 'none';
+}

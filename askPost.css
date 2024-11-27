@@ -32,4 +32,14 @@
     width: 100vw;
     margin: 0;
   }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Darken */
+  z-index: 10;
+  display: none; /* Hide at the beginning */
 }/*# sourceMappingURL=askPost.css.map */
