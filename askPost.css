@@ -4,7 +4,6 @@
   flex-direction: row;
   margin-top: 10px;
   width: 480px;
-  border: 1px solid rgb(0, 0, 0);
 }
 
 #divider1, #divider2 {
@@ -12,34 +11,25 @@
   justify-content: center;
   align-items: center;
   width: 240px;
-  border: 1px solid rgb(209, 24, 24);
 }
 
-#floatingLabelAsk {
+#floatingLabelAsk, #floatingLabelPost {
   border: 0.5px solid gray;
   border-radius: 10px;
   width: 130px;
   background-color: white;
-}
-
-#floatingLabelPost {
-  border: 0.5px solid gray;
-  border-radius: 10px;
-  width: 130px;
-  background-color: white;
+  display: none;
 }
 
 @media (max-width: 768px) {
   .containerLabelsPost {
     width: 480px;
-    border: 1px solid rgb(0, 0, 0);
     margin: 0;
   }
 }
 @media (max-width: 480px) {
   .containerLabelsPost {
     width: 100vw;
-    border: 1px solid rgb(0, 0, 0);
     margin: 0;
   }
 }/*# sourceMappingURL=askPost.css.map */
