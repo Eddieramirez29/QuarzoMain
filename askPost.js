@@ -48,9 +48,11 @@ postButton.addEventListener("mouseout", function()
 function showOverlay()
 {
     document.getElementById('overlay').style.display = 'block';
+    document.getElementById("modal").style.display = "block";
 }
 
 function hideOverlay()
 {
     document.getElementById('overlay').style.display = 'none';
+    document.getElementById("modal").style.display = "none";
 }

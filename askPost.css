@@ -42,4 +42,15 @@
   background: rgba(0, 0, 0, 0.5); /* Darken */
   z-index: 10;
   display: none; /* Hide at the beginning */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 20;
+  display: none; /* Oculto por defecto */
 }/*# sourceMappingURL=askPost.css.map */
