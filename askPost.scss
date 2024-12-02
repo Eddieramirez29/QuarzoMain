@@ -35,7 +35,7 @@ $backgroundColorWhiteElements: white;
     }
 }
 
-@media (max-width: 480px)
+@media  (max-width: 480px)
 {
     .containerLabelsPost
     {
@@ -43,6 +43,7 @@ $backgroundColorWhiteElements: white;
         margin: 0;
     }
 }
+
 
 
 .overlay
@@ -67,7 +68,7 @@ $backgroundColorWhiteElements: white;
     padding: 20px;
     z-index: 20;
     display: none; /* Hidden by default */
-    width: 480px;
+    width: 400px;
     height: 480px;
     border-radius: 10px;
 }
@@ -137,7 +138,7 @@ $backgroundColorWhiteElements: white;
 
 #fieldEditPost
 {
-    width: 460px;
+    width: 365.4px;
     height: 100px;
     margin-top: 10px;
     padding: 10px;
@@ -147,7 +148,7 @@ $backgroundColorWhiteElements: white;
 .containerButtonsAcceptCancel
 {
     margin-top: 10px;
-    width: 460px;
+    width: 365.4px;
     display: flex;
     justify-content: flex-end;
 }
