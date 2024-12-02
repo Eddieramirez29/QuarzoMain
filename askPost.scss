@@ -103,11 +103,18 @@ $backgroundColorWhiteElements: white;
 
 .containerAdviseSection
 {
+    display: flex;
+    justify-content: center;
+}
+
+.adviseSection
+{
     background-color: rgb(142, 239, 223);
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 1px;
+    padding: 5px;
     border-radius: 10px;
     color: rgb(2, 103, 86);
+    width: 370px;
 }
 
 .containerSelectPublicViews
@@ -115,7 +122,7 @@ $backgroundColorWhiteElements: white;
     display:flex;
     justify-content: space-between;
     // border:1px solid black;
-    padding: 10px;
+    padding: 5px;
 }
 
 #selectPublicButton
