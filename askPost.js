@@ -1,4 +1,5 @@
 const askButton = document.getElementById("askButton");
+const inputAskPost = document.getElementById("inputAskPost");
 const cancelQuestionButtonPost = document.getElementById("cancelQuestionButtonPost");
 const floatingLabelAsk = document.getElementById("floatingLabelAsk");
 const postButton = document.getElementById("postButton");
@@ -33,6 +34,11 @@ overlay.addEventListener("click", function()
 
 
 askButton.addEventListener("click", function()
+{
+    showOverlay();
+});
+
+inputAskPost.addEventListener("click", function()
 {
     showOverlay();
 });

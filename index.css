@@ -147,7 +147,7 @@ body {
   background-color: white;
   margin-top: 25px;
   width: 480px;
-  height: 120px;
+  height: 100px;
   border: 1px solid gray;
   border-radius: 5px;
 }
@@ -168,9 +168,11 @@ body {
 
 #inputAskPost {
   flex-grow: 1;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   border: 1px solid gray;
+  display: flex;
+  align-items: center;
 }
 
 #inputAskPost:hover {
