@@ -9,12 +9,28 @@ const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
 const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
 
+
+
+const correctText = (textArea) =>
+{
+    fetch('https://api.languagetool.org/v2/check',
+    {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ text: textArea, language: 'en-US' })
+    })
+    .then(response => response.json())
+    .then(data => console.log(data.matches[0].replacements[0].value));//Gets the corrected word
+}
 //When fieldEditPost has at least a single character, it will enable addQuestionButtonPost
 fieldEditPost.addEventListener('input', () =>
 {
+    let textArea;
     if (fieldEditPost.value.length > 0)
     {
         addQuestionButtonPost.style.backgroundColor = "#B92B27";
+        textArea = fieldEditPost.value;
+        // correctText(textArea);
     }
     else
     {
