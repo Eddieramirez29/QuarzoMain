@@ -104,4 +104,42 @@
 
 #selectPublicButton:hover {
   background-color: gray;
+}
+
+.containerEditWindowPost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fieldEditPost {
+  width: 460px;
+  height: 100px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.containerButtonsAcceptCancel {
+  margin-top: 10px;
+  width: 460px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.containerButtonsAcceptCancel > * {
+  height: 35px;
+  border-radius: 15px;
+  border: none;
+}
+
+#addQuestionButtonPost {
+  background-color: #e55b56;
+  margin: 0;
+  margin-right: 10px;
+  color: white;
+}
+
+#cancelQuestionButtonPost:hover {
+  background-color: rgb(203, 197, 197);
 }/*# sourceMappingURL=askPost.css.map */
