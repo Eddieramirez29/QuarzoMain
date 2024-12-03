@@ -6,37 +6,26 @@ const postButton = document.getElementById("postButton");
 const floatingLabelPost = document.getElementById("floatingLabelPost");
 const fieldEditPost = document.getElementById("fieldEditPost");
 const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
+const correctTextOnPost = document.getElementById("correctTextOnPost");
 const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
 
 
 
-const correctText = (textArea) =>
-{
-    fetch('https://api.languagetool.org/v2/check',
-    {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({ text: textArea, language: 'en-US' })
-    })
-    .then(response => response.json())
-    .then(data => console.log(data.matches[0].replacements[0].value));//Gets the corrected word
-}
-//When fieldEditPost has at least a single character, it will enable addQuestionButtonPost
 fieldEditPost.addEventListener('input', () =>
 {
-    let textArea;
     if (fieldEditPost.value.length > 0)
     {
         addQuestionButtonPost.style.backgroundColor = "#B92B27";
-        textArea = fieldEditPost.value;
-        // correctText(textArea);
+        correctTextOnPost.style.display = "block";
     }
     else
     {
         addQuestionButtonPost.style.backgroundColor = "#e55b56";
+        correctTextOnPost.style.display = "none";
     }
 });
+
 
 cancelQuestionButtonPost.addEventListener("click", function()
 {

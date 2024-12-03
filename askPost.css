@@ -146,6 +146,11 @@
   color: white;
 }
 
-#cancelQuestionButtonPost:hover {
+#cancelQuestionButtonPost:hover, #correctTextOnPost:hover {
   background-color: rgb(203, 197, 197);
+}
+
+#correctTextOnPost {
+  margin-right: 50px;
+  display: none;
 }/*# sourceMappingURL=askPost.css.map */
