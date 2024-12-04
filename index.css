@@ -13,7 +13,7 @@ body {
 }
 
 .containerMain {
-  height: 100vh;
+  height: 20vh;
   background-color: rgb(240, 234, 234);
   display: flex;
   justify-content: center;
