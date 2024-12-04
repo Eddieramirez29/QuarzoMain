@@ -9,7 +9,63 @@ const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
 const correctTextOnPost = document.getElementById("correctTextOnPost");
 const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
+async function correctText(inputText)
+{
+  const url = 'https://api.languagetool.org/v2/check';
 
+  return fetch(url,
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      language: 'es',
+      text: inputText
+    })
+  })
+    .then(response => response.json())
+    .then(data =>
+    {
+      if (data.matches && data.matches.length > 0)
+      {
+        console.log('Corrections: ', data.matches[0].replacements[0]?.value);
+        return data.matches[0].replacements[0]?.value || inputText;
+      }
+      else
+      {
+        return inputText;
+      }
+    })
+    .catch(error =>
+    {
+      console.error('Error:', error);
+      return inputText;
+    });
+}
+
+correctTextOnPost.addEventListener("click", function()
+{
+  const wholeText = fieldEditPost.value;
+  const words = wholeText.split(" "); // Splits whole text in words
+
+  let correctedText = "";
+
+  Promise.all
+  (
+    words.map(word => correctText(word)) // Corrects each word
+  ).then(results =>
+  {
+    correctedText = results.join(" "); // It joins corrected words
+    console.log('Corrected Text:', correctedText);
+    fieldEditPost.value = ""
+    fieldEditPost.value = correctedText;
+  }).catch(error =>
+  {
+    console.error('Error correcting text:', error);
+  });
+});
+
+  
+  
 
 
 fieldEditPost.addEventListener('input', () =>
