@@ -9,6 +9,8 @@ const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
 const correctTextOnPost = document.getElementById("correctTextOnPost");
 const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
+let correctedText = "";
+
 async function correctText(inputText)
 {
   const url = 'https://api.languagetool.org/v2/check';
@@ -47,7 +49,7 @@ correctTextOnPost.addEventListener("click", function()
   const wholeText = fieldEditPost.value;
   const words = wholeText.split(" "); // Splits whole text in words
 
-  let correctedText = "";
+  
 
   Promise.all
   (

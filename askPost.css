@@ -153,18 +153,4 @@
 #correctTextOnPost {
   margin-right: 50px;
   display: none;
-}
-
-@media (max-width: 768px) {
-  .modal {
-    width: 480px;
-    border: 1px solid gray;
-    margin: 0;
-  }
-}
-@media (max-width: 480px) {
-  .modal {
-    width: 100vw;
-    margin: 0;
-  }
 }/*# sourceMappingURL=askPost.css.map */
