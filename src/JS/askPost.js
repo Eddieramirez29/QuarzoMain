@@ -1,15 +1,16 @@
 const askButton = document.getElementById("askButton");
+const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
+const postButton = document.getElementById("postButton");
 const inputAskPost = document.getElementById("inputAskPost");
 const cancelQuestionButtonPost = document.getElementById("cancelQuestionButtonPost");
 const floatingLabelAsk = document.getElementById("floatingLabelAsk");
-const postButton = document.getElementById("postButton");
 const floatingLabelPost = document.getElementById("floatingLabelPost");
 const fieldEditPost = document.getElementById("fieldEditPost");
-const addQuestionButtonPost = document.getElementById("addQuestionButtonPost");
 const correctTextOnPost = document.getElementById("correctTextOnPost");
 const overlay = document.getElementById("overlay");//Overlay tag(a div)
 
 let correctedText = "";
+let option;
 
 async function correctText(inputText)
 {
@@ -48,8 +49,6 @@ correctTextOnPost.addEventListener("click", function()
 {
   const wholeText = fieldEditPost.value;
   const words = wholeText.split(" "); // Splits whole text in words
-
-  
 
   Promise.all
   (
@@ -95,14 +94,14 @@ overlay.addEventListener("click", function()
     hideOverlay();
 });
 
-
-askButton.addEventListener("click", function()
+inputAskPost.addEventListener("click", function()
 {
     showOverlay();
 });
 
-inputAskPost.addEventListener("click", function()
+askButton.addEventListener("click", function()
 {
+    option = "ask";
     showOverlay();
 });
 
@@ -127,6 +126,7 @@ postButton.addEventListener("mouseover", function()
 
 postButton.addEventListener("click", function()
 {
+    option ="post";
     showOverlay();
 });
 

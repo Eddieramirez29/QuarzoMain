@@ -9,15 +9,78 @@ addQuestionButtonPost.addEventListener("click", () =>
     const headerPost = document.createElement("div");//First inner container
     const questionSection = document.createElement("div");//Second inner container
 
+    let date = new Date();
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let monthString = convertToMonth(month);
+    let currentDate = monthString + "-" + day + "-" + year;
+
     createUserPostCard(userPost);//Creates only the card
-    createContainerHeaderPost(userPost, headerPost);//Creates header of the post card(picture profile and other data user)
+    createContainerHeaderPost(userPost, headerPost, currentDate);//Creates header of the post card(picture profile and other data user)
     createQuestionSection(userPost, questionSection);//Second inner container
     createQuestion(questionSection);//Create question
     /*This section must be answered by other users.
-      So far, it only creates the container of the answer*/
+    So far, it only creates the container of the answer*/
     createAnswerContainer(userPost);
     hideEditPostCardAndItsOverlay();//Hides the editing post section
 })
+
+const convertToMonth = (month) =>
+{
+    let monthABv;
+
+    if(month === 1)
+    {
+        monthABv = "Jan";
+    }
+    else if(month === 2)
+    {
+        monthABv = "Feb";
+    }
+    else if(month === 3)
+    {
+        monthABv = "Mar";
+    }
+    else if(month === 4)
+    {
+        monthABv = "Apr";
+    }
+    else if(month === 5)
+    {
+        monthABv = "May";
+    }
+    else if(month === 6)
+    {
+        monthABv = "Jun";
+    }
+    else if(month === 7)
+    {
+        monthABv = "Jul";
+    }
+    else if(month === 8)
+    {
+        monthABv = "Aug";
+    }
+    else if(month === 9)
+    {
+        monthABv = "Sept";
+    }
+    else if(month === 10)
+    {
+        monthABv = "Oct";
+    }
+    else if(month === 11)
+    {
+        monthABv = "Nov";
+    }
+    else
+    {
+        monthABv = "Dec";
+    }
+
+    return monthABv;
+}
 
 const createUserPostCard = (userPost) =>
 {
@@ -26,9 +89,10 @@ const createUserPostCard = (userPost) =>
     containerUserPost.appendChild(userPost);
 }
 
-const createContainerHeaderPost = (userPost, headerPost) =>
+const createContainerHeaderPost = (userPost, headerPost, currentDate) =>
 {
     headerPost.id = "headerPost";
+    headerPost.innerHTML = currentDate;
     userPost.appendChild(headerPost);
 }
 
